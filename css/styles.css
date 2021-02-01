@@ -931,6 +931,13 @@ p {
     fill: currentColor;
 }
 
+.modal-close-buttom:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+    fill: var(--accent-color);
+}
+
+
 /* Блок для підпишись */
 
 .subscribe-container {
@@ -977,16 +984,20 @@ p {
     border-radius: 4px;
     background-color: transparent;
     padding-left: 16px;
-    transition: background-color var(--animation-duration) var(--animation-type);
+    color: rgba(255, 255, 255, 0.6);
+    transition: transform var(--animation-duration);
     transition-property: border;
 }
 
 .subscribe-button {
+    display: flex;
+    align-items: center;  
+    justify-content: center;     
+    text-align: center;
+
     padding: 10px 32px;
     min-width: 200px;
-    align-items: baseline;       
-    text-align: center; 
-
+     
     margin-left: 12px;
 
     font-weight: 700;
@@ -1003,4 +1014,25 @@ p {
     transition-timing-function: var(--animation-type); 
     transition: background-color var(--animation-duration) var(--animation-type);
     }
+
+.subscribe-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 10px;
+}
+
+.subscribe-input:placeholder-shown {
+
+    font-size: 16px;
+    line-height: 1.25;
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    
+
+}
 

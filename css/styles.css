@@ -937,23 +937,60 @@ p {
     fill: var(--accent-color);
 }
 
+/* Розмітка модалки */
 
-/* Блок для підпишись */
+.modal-title {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 12px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: var(--title-text-color);
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;  
+    justify-content: center;     
+    text-align: center;
+    min-width: 200px;
+    
+    padding: 10px 32px;
+    margin-left: 12px;
+
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+        
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    color: var(--hero-text-color); 
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
+    transition-timing-function: var(--animation-type); 
+    transition: background-color var(--animation-duration) var(--animation-type);
+}
+
+
+
+
+
+
+/* Блок для підписки */
 
 .subscribe-container {
-    position: relative;
-    display: block;
     margin-left: auto;
     align-items: center;
-
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-
-    color: var(--hero-text-color);
 }
 .form {
     display: inline-block;
@@ -994,11 +1031,11 @@ p {
     align-items: center;  
     justify-content: center;     
     text-align: center;
+    min-width: 200px;
 
     padding: 10px 32px;
-    min-width: 200px;
-     
     margin-left: 12px;
+
 
     font-weight: 700;
     font-size: 16px;
@@ -1024,15 +1061,11 @@ p {
 }
 
 .subscribe-input:placeholder-shown {
-
     font-size: 16px;
     line-height: 1.25;
     
     display: flex;
     align-items: center;
     letter-spacing: 0.03em;
-
-    
-
 }
 

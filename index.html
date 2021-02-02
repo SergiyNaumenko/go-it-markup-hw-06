@@ -419,20 +419,36 @@
           <svg class="icon-modal-close" width="18px" height="18px"><use href="./images/symbol-defs.svg#close-black"></use>
           </svg>
         </button>
+
  <!--Розмітка модалки-->
       <div>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
       </div>
-      <form>
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name"/>
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel"/>
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="email" />
+      <form class="form-group">
+        <div class="form-field">
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name"/>
+        </div>
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel"/>
+        </div>
+        <div class="form-field">
+          <label for="mail">Почта</label>
+          <input type="email" name="mail" id="email"/>
+        </div>
+        <div class="form-coment">
+          <label for="comment">Коментарий</label>
+          <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+        </div>
+        <div class="form-label">
+          <input type="checkbox" name="policy" id="policy"/>
+          <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        </div>
       </form>
-      <div><button class="submit-button" type="submit">Отправить</button></div>
-      </div>
+        <div>
+          <button class="submit-button" type="submit">Отправить</button></div>
+        </div>
 
      
 

@@ -943,7 +943,8 @@ p {
     padding-top: 20px;
     padding-right: 40px;
     padding-left: 40px;
-    margin-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 30px;
 
     font-weight: bold;
     font-size: 20px;
@@ -981,9 +982,48 @@ p {
     transition: background-color var(--animation-duration) var(--animation-type);
 }
 
+.form-group {
+    padding: 40px;
+}
 
+.form-field {
+    display: flex;
+    flex-direction: column; 
+}
 
+.form-field input {
+    margin: 0;
+    padding: 0;
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
 
+.form-field label {
+    margin-bottom: 5px;
+} 
+
+.form-coment {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 138px;
+}   
+
+.form-coment .textarea {
+    resize: none;
+}
+
+.form-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 8px;
+}
 
 
 /* Блок для підписки */

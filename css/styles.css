@@ -899,12 +899,12 @@ p {
     pointer-events: none;
 }
 
-.modal {
+.modal-window {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    padding: 40px;
     min-height: 580px;
     min-width: 530px;
     background-color: var(--background-head-color);
@@ -940,10 +940,6 @@ p {
 /* Розмітка модалки */
 
 .modal-title {
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-top: 0;
     margin-bottom: 30px;
 
     font-weight: bold;
@@ -955,15 +951,13 @@ p {
     color: var(--title-text-color);
 }
 
-.submit-button {
-    display: flex;
-    align-items: center;  
+.submit-button {  
     justify-content: center;     
     text-align: center;
     min-width: 200px;
     
     padding: 10px 32px;
-    margin-left: 12px;
+    
 
 
     font-weight: 700;
@@ -982,49 +976,103 @@ p {
     transition: background-color var(--animation-duration) var(--animation-type);
 }
 
-.form-group {
-    padding: 40px;
+.submit-button-position {
+    display: flex;
+    justify-content: center;
 }
 
-.form-field {
+.test-modal {
     display: flex;
     flex-direction: column; 
 }
 
+.form-field {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.form-lable {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
 .form-field input {
+    width: 100%;
+    padding-left: 40px;
     margin: 0;
-    padding: 0;
-    width: 448px;
+    
+    width: 100%;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 }
 
-.form-field label {
-    margin-bottom: 5px;
-} 
-
 .form-coment {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 138px;
+    margin-bottom: 20px;
 }   
 
-.form-coment .textarea {
+textarea {
     resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
 }
 
-.form-label {
+.checkbox-field {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 
+.checkbox-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border: 1px solid var(--title-text-color);
+    border-radius: 2px;
+}
 .checkbox {
-    margin-right: 8px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
+.checkbox:checked + .checkbox-icon {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../images/full-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+
+.icon-modal-close {
+    fill: currentColor;
+}
+
+.input-icon {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 10px;
+}
+
+.form-field:focus-within>.input-icon {
+    fill: var(--accent-color);
+}
 
 /* Блок для підписки */
 

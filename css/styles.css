@@ -28,8 +28,6 @@
         /* цвет фона в хедере (белый) #FFFFFF */
 
 body {
-    padding-top: 80px;
-
     font-family: 'Roboto', sans-serif;
 
     color: var(--primary-text-color);
@@ -79,7 +77,6 @@ p {
 /* Header */
 
 .page-header {
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -611,7 +608,6 @@ p {
     display: flex;
     justify-content: space-around;
     padding-bottom: 94px;
-    
 }
 
 .list {
@@ -625,8 +621,12 @@ p {
 .client-container {
     width: 170px;
     height: 90px;
+}
+
+.client-container:not(:last-child) {
     margin-right: 30px;
 }
+
 .client-link:focus,
 .client-link:hover {
     fill: var(--accent-color);
@@ -896,13 +896,15 @@ p {
 }
 
 .modal-window {
+    box-sizing: border-box;
+    width: 528px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
-    min-height: 580px;
-    min-width: 530px;
+    /* min-height: 580px; */
+    /* min-width: 530px; */
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     background-color: var(--background-head-color);
@@ -995,8 +997,7 @@ p {
 
 /* .form-field input { */
 .form-input  {
-    width: 100%;
-    padding-left: 40px;
+    /* padding-left: 40px; */
     
     width: 100%;
     height: 40px;
@@ -1028,7 +1029,6 @@ textarea {
 }
 
 .label-field {
-    margin-bottom: 4px;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.2;
@@ -1113,6 +1113,7 @@ letter-spacing: 0.03em;
 }
 .form {
     display: inline-block;
+    width: 100%;
 }
 
 .subscribe-lable {

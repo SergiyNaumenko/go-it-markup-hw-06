@@ -51,8 +51,9 @@
           <div class="overlay">
             <div class="heading-container">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            </div>
             <button type="button" class="button" data-open-modal>Заказать услугу</button>
+            </div>
+            
           </div>
         </section>
       
@@ -469,8 +470,6 @@
       const { height: pageHeaderHeight } = document
         .querySelector(".page-header")
         .getBoundingClientRect();
-
-      // document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
       const refs = {
         openModalBtn: document.querySelector('[data-open-modal]'),
